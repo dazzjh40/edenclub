@@ -1,3 +1,25 @@
+/* Tue 6 Oct 2026 only: no Gentlemen's Night (special event). Switches itself off when the 90s card expires at 3am Wednesday. Safe to delete after. */
+body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name,body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc{font-size:0}
+body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{font-size:1.15rem}
+body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{font-size:.95rem}
+body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"No Gentlemen's Night this week – special event"}
+body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Join us on Friday, when single men can mix on both sides of the bar, with access to the whole club including the playrooms and jacuzzi. For MFM fantasies."}
+:lang(es) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"Esta semana no hay Noche de Caballeros – evento especial"}
+:lang(es) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Te esperamos el viernes, cuando los hombres solos pueden moverse por los dos lados de la barra, con acceso a todo el club, incluidas las salas de juego y el jacuzzi. Para fantasías MFM."}
+:lang(de) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"Diese Woche kein Herrenabend – Sonderveranstaltung"}
+:lang(de) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Kommt am Freitag: Dann dürfen sich einzelne Männer auf beiden Seiten der Bar bewegen und haben Zugang zum ganzen Club, einschließlich Spielzimmer und Whirlpool. Für MFM-Fantasien."}
+:lang(nl) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"Deze week geen Herenavond – speciaal evenement"}
+:lang(nl) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Kom vrijdag langs: dan mogen alleenstaande mannen aan beide kanten van de bar komen, met toegang tot de hele club, inclusief de speelkamers en jacuzzi. Voor MFM-fantasieën."}
+:lang(fr) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"Pas de Soirée Messieurs cette semaine – événement spécial"}
+:lang(fr) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Rendez-vous vendredi : les hommes seuls circulent des deux côtés du bar, avec accès à tout le club, salles de jeux et jacuzzi compris. Pour les fantasmes MFM."}
+:lang(it) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"Questa settimana niente Serata Uomini – evento speciale"}
+:lang(it) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Vi aspettiamo venerdì, quando gli uomini soli possono muoversi su entrambi i lati del bar, con accesso a tutto il club, sale gioco e jacuzzi comprese. Per fantasie MFM."}
+:lang(pt) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"Esta semana não há Noite dos Senhores – evento especial"}
+:lang(pt) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Junte-se a nós na sexta-feira, quando os homens sozinhos podem circular dos dois lados do bar, com acesso a todo o clube, incluindo as salas de jogos e o jacuzzi. Para fantasias MFM."}
+:lang(sv) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"Ingen Herrkväll den här veckan – specialevenemang"}
+:lang(sv) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Kom på fredag, då ensamma män får röra sig på båda sidor om baren, med tillträde till hela klubben inklusive lekrum och bubbelpool. För MFM-fantasier."}
+:lang(nb) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .name::after{content:"Ingen Herrekveld denne uken – spesialarrangement"}
+:lang(nb) body:has(.promo[data-event="naughty-90s-2026"]) .night[data-day="tuesday"] .desc::after{content:"Bli med på fredag, da enslige menn kan bevege seg på begge sider av baren, med tilgang til hele klubben inkludert lekerom og boblebad. For MFM-fantasier."}
 /* Hide the August opening-hours banner on the programme pages. Delete this line to show a banner there again. */
 .notice{display:none}
 /* SOLD OUT notice for the Naughty 90s Party card (6 Oct 2026). Safe to delete after the event. */
