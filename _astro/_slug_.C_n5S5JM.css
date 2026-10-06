@@ -1,3 +1,5 @@
+/* Hide the August opening-hours banner on the programme pages. Delete this line to show a banner there again. */
+.notice{display:none}
 /* SOLD OUT notice for the Naughty 90s Party card (6 Oct 2026). Safe to delete after the event. */
 .promo[data-event="naughty-90s-2026"]::before{display:block;margin:-.8rem -.8rem .7rem;padding:.55rem .5rem;background:#6d0f20;color:#fff;font-weight:700;font-size:1.3rem;letter-spacing:.14em;border-radius:3px 3px 0 0}
 .promo[data-event="naughty-90s-2026"] .body::after{display:block;white-space:pre-line;margin:.8rem 0 0;padding:.7rem .8rem;background:#6d0f20;color:#fff;font-weight:700;font-size:.92rem;line-height:1.45;border-radius:3px}
