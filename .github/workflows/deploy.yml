@@ -1,0 +1,41 @@
+# Publishes the site to GitHub Pages: on every change to main, every night
+# just after closing (so dated notices and expired events drop off), and on
+# demand from the Actions tab.
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 03:15 Canary time in both winter (UTC) and summer (UTC+1).
+    - cron: '15 2 * * *'
+    - cron: '15 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/build.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
